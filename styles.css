@@ -196,18 +196,23 @@
     padding-top: 8px;
   }
 
+  .workflow-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
   .workflow-number {
-    display: inline-block;
     font-size: 14px;
     font-weight: 700;
     color: #4361ee;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+    flex-shrink: 0;
   }
 
   .workflow-step h3 {
-    margin: 0 0 12px;
+    margin: 0;
     font-size: 24px;
     letter-spacing: -0.5px;
   }
