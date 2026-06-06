@@ -92,6 +92,48 @@
     border-radius: 12px;
     font-weight: 700;
   }
+
+  .screenshot-intro {
+    max-width: 720px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #4d5870;
+    margin: 0 0 40px;
+  }
+
+  .screenshot-card {
+    margin: 0;
+    background: #f7f8fb;
+    border: 1px solid #e4e7ef;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(23, 32, 51, 0.06);
+  }
+
+  .screenshot-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .screenshot-card figcaption {
+    padding: 16px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #4d5870;
+    border-top: 1px solid #e4e7ef;
+    background: white;
+  }
+
+  .screenshot-featured {
+    margin-bottom: 24px;
+  }
+
+  .screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
   
   .dark {
     background: #172033;
@@ -131,6 +173,10 @@
     }
   
     .feature-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .screenshot-grid {
       grid-template-columns: 1fr;
     }
   }
