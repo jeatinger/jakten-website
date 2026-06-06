@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #f7f8fb;
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 8%;
+    background: white;
+    border-bottom: 1px solid #e4e7ef;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  
+  nav a {
+    margin-left: 24px;
+    color: #172033;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .hero {
+    padding: 110px 8%;
+    max-width: 950px;
+  }
+  
+  .eyebrow {
+    color: #4361ee;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  h1 {
+    font-size: 64px;
+    line-height: 1;
+    margin: 16px 0;
+    letter-spacing: -2px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #4d5870;
+    max-width: 760px;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 22px;
+    background: #172033;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  .section {
+    padding: 80px 8%;
+    background: white;
+  }
+  
+  .section h2 {
+    font-size: 38px;
+    margin-top: 0;
+    letter-spacing: -1px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+  }
+  
+  .feature-grid div {
+    background: #f1f3f8;
+    padding: 24px;
+    border-radius: 12px;
+    font-weight: 700;
+  }
+  
+  .dark {
+    background: #172033;
+    color: white;
+  }
+  
+  .dark p {
+    color: #d8deea;
+    max-width: 720px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  footer {
+    padding: 28px 8%;
+    color: #68738a;
+    background: white;
+    border-top: 1px solid #e4e7ef;
+  }
+  
+  @media (max-width: 800px) {
+    .site-header {
+      display: block;
+    }
+  
+    nav {
+      margin-top: 16px;
+    }
+  
+    nav a {
+      margin-left: 0;
+      margin-right: 16px;
+    }
+  
+    h1 {
+      font-size: 44px;
+    }
+  
+    .feature-grid {
+      grid-template-columns: 1fr;
+    }
+  }
