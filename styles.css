@@ -112,16 +112,30 @@
   
   .feature-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 18px;
     margin-top: 32px;
   }
-  
-  .feature-grid div {
+
+  .feature-card {
     background: #f1f3f8;
     padding: 24px;
     border-radius: 12px;
+  }
+
+  .feature-card h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
     font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+
+  .feature-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4d5870;
   }
 
   .screenshot-intro {
@@ -171,10 +185,37 @@
     color: white;
   }
   
-  .dark p {
+  .workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  .workflow-step {
+    padding-top: 8px;
+  }
+
+  .workflow-number {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4361ee;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .workflow-step h3 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+  }
+
+  .workflow-step p {
+    margin: 0;
     color: #d8deea;
-    max-width: 720px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 1.5;
   }
 
@@ -224,6 +265,11 @@
   
     .feature-grid {
       grid-template-columns: 1fr;
+    }
+
+    .workflow-steps {
+      grid-template-columns: 1fr;
+      gap: 36px;
     }
 
     .screenshot-grid {

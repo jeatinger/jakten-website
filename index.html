@@ -10,7 +10,9 @@
   <header class="site-header">
     <div class="logo">Jakten</div>
     <nav>
+      <a href="#why">Why</a>
       <a href="#features">Features</a>
+      <a href="#preview">Preview</a>
       <a href="#pilot">Pilot</a>
       <a href="mailto:hello@jakten.net">Contact</a>
     </nav>
@@ -31,7 +33,7 @@
       </div>
     </section>
 
-    <section class="section why">
+    <section id="why" class="section why">
       <h2>Why Jakten Risk?</h2>
       <p class="why-lead">
         Most project teams understand contingency is needed. Few can clearly explain why.
@@ -46,14 +48,38 @@
     <section id="features" class="section">
       <h2>Built for practical project risk analysis</h2>
       <div class="feature-grid">
-        <div>Monte Carlo simulation</div>
-        <div>Risk register modeling</div>
-        <div>Correlation and dependencies</div>
-        <div>Scenario management</div>
-        <div>Funding recommendation</div>
-        <div>Contingency attribution</div>
-        <div>Executive PDF reporting</div>
-        <div>CSV export</div>
+        <div class="feature-card">
+          <h3>Monte Carlo simulation</h3>
+          <p>Run thousands of iterations to quantify cost uncertainty and funding percentiles.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Risk register modeling</h3>
+          <p>Capture discrete risks alongside estimate uncertainty in one workspace.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Correlation and dependencies</h3>
+          <p>Model how risk drivers move together instead of treating them as independent.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Scenario management</h3>
+          <p>Compare funding outcomes across alternative project assumptions.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Funding recommendation</h3>
+          <p>Translate simulation results into a clear, defensible funding number.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Contingency attribution</h3>
+          <p>Show which risks and uncertainties drive contingency requirements.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Executive PDF reporting</h3>
+          <p>Generate stakeholder-ready reports without rebuilding slides.</p>
+        </div>
+        <div class="feature-card">
+          <h3>CSV export</h3>
+          <p>Export results for analysis in Excel or downstream systems.</p>
+        </div>
       </div>
     </section>
 
@@ -90,12 +116,25 @@
       </div>
     </section>
 
-    <section class="section dark">
-      <h2>For estimators, risk managers, and project controls teams.</h2>
-      <p>
-        Jakten Risk helps teams model uncertainty, understand contingency drivers,
-        and communicate funding recommendations clearly.
-      </p>
+    <section class="section dark workflow">
+      <h2>From estimate to funding recommendation</h2>
+      <div class="workflow-steps">
+        <div class="workflow-step">
+          <span class="workflow-number">1</span>
+          <h3>Model</h3>
+          <p>Define uncertainty on estimate line items, build your risk register, and map dependencies between drivers.</p>
+        </div>
+        <div class="workflow-step">
+          <span class="workflow-number">2</span>
+          <h3>Simulate</h3>
+          <p>Run Monte Carlo simulation to see probability distributions, funding percentiles, and contingency attribution.</p>
+        </div>
+        <div class="workflow-step">
+          <span class="workflow-number">3</span>
+          <h3>Report</h3>
+          <p>Deliver executive PDF reports and funding recommendations stakeholders can understand and act on.</p>
+        </div>
+      </div>
     </section>
 
     <section id="pilot" class="section cta">
