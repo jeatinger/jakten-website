@@ -19,6 +19,35 @@
   }
   
   .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .logo-mark,
+  .footer-logo-mark,
+  .app-chrome-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #0d1117;
+  }
+
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .logo-mark img {
+    height: 22px;
+    width: auto;
+  }
+
+  .logo-wordmark {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: -0.5px;
@@ -149,6 +178,17 @@
     margin: 0 auto;
   }
 
+  .showcase-brand {
+    margin-bottom: 28px;
+  }
+
+  .showcase-logo {
+    display: block;
+    height: 36px;
+    width: auto;
+    opacity: 0.92;
+  }
+
   .product-showcase-eyebrow {
     margin: 0 0 12px;
     color: #6b8cff;
@@ -200,21 +240,15 @@
     padding: 10px 14px;
   }
 
-  .app-chrome-dots {
-    display: flex;
-    gap: 6px;
-    flex-shrink: 0;
+  .app-chrome-brand {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
   }
 
-  .app-chrome-dots span {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #3a4152;
-  }
-
-  .app-chrome-dots span:first-child {
-    background: #5c6370;
+  .app-chrome-brand img {
+    height: 16px;
+    width: auto;
   }
 
   .app-chrome-label {
@@ -251,16 +285,16 @@
     object-position: center top;
   }
 
-  .app-crop-monte-carlo img {
-    object-position: center 8%;
+  .app-crop-charts img {
+    object-position: center 6%;
   }
 
   .app-crop-funding img {
-    object-position: center 22%;
+    object-position: center top;
   }
 
-  .app-crop-attribution img {
-    object-position: center 78%;
+  .app-crop-contingency img {
+    object-position: center 12%;
   }
 
   .showcase-features {
@@ -360,10 +394,46 @@
   }
   
   footer {
-    padding: 28px 8%;
+    padding: 32px 8%;
     color: #68738a;
     background: white;
     border-top: 1px solid #e4e7ef;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer-logo-mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .footer-logo-mark img {
+    height: 18px;
+    width: auto;
+  }
+
+  .footer-wordmark {
+    font-size: 15px;
+    font-weight: 700;
+    color: #172033;
+    letter-spacing: -0.2px;
+  }
+
+  footer p {
+    margin: 0;
   }
   
   @media (max-width: 1024px) {
@@ -419,6 +489,11 @@
     }
 
     .hero-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .footer-inner {
       flex-direction: column;
       align-items: flex-start;
     }

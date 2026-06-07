@@ -4,11 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jakten Risk</title>
+  <link rel="icon" href="assets/Secondary Logo.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="logo">Jakten</div>
+    <a class="logo" href="#">
+      <span class="logo-mark">
+        <img src="assets/Secondary Logo.png" alt="" />
+      </span>
+      <span class="logo-wordmark">Jakten</span>
+    </a>
     <nav>
       <a href="#why">Why</a>
       <a href="#features">Features</a>
@@ -85,6 +91,13 @@
 
     <section id="preview" class="product-showcase">
       <div class="product-showcase-inner">
+        <div class="showcase-brand">
+          <img
+            src="assets/Primary Logo.png"
+            alt="Jakten"
+            class="showcase-logo"
+          />
+        </div>
         <p class="product-showcase-eyebrow">Product preview</p>
         <h2>Quantify uncertainty. Communicate with confidence.</h2>
         <p class="product-showcase-intro">
@@ -95,10 +108,8 @@
 
         <div class="app-frame app-frame-hero">
           <div class="app-chrome" aria-hidden="true">
-            <div class="app-chrome-dots">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="app-chrome-brand">
+              <img src="assets/Secondary Logo.png" alt="" />
             </div>
             <span class="app-chrome-label">Jakten Risk — Results</span>
           </div>
@@ -115,36 +126,32 @@
           <article class="showcase-card">
             <div class="app-frame app-frame-card">
               <div class="app-chrome app-chrome-compact" aria-hidden="true">
-                <div class="app-chrome-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <div class="app-chrome-brand">
+                  <img src="assets/Secondary Logo.png" alt="" />
                 </div>
-                <span class="app-chrome-label">Simulation</span>
+                <span class="app-chrome-label">Cost distribution &amp; S-curve</span>
               </div>
-              <div class="app-frame-viewport app-crop app-crop-monte-carlo">
+              <div class="app-frame-viewport app-crop app-crop-charts">
                 <img
-                  src="assets/simulationresults.png"
-                  alt="Monte Carlo percentile outcomes from cost simulation"
+                  src="assets/charts.png"
+                  alt="Histogram and S-curve charts from Monte Carlo cost simulation"
                   loading="lazy"
                 />
               </div>
             </div>
             <div class="showcase-card-body">
               <h3>Monte Carlo cost simulation</h3>
-              <p>See P10 through P90 funding outcomes from thousands of simulated project scenarios.</p>
+              <p>Explore cost distributions and cumulative confidence curves from thousands of simulated scenarios.</p>
             </div>
           </article>
 
           <article class="showcase-card">
             <div class="app-frame app-frame-card">
               <div class="app-chrome app-chrome-compact" aria-hidden="true">
-                <div class="app-chrome-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <div class="app-chrome-brand">
+                  <img src="assets/Secondary Logo.png" alt="" />
                 </div>
-                <span class="app-chrome-label">Funding recommendation</span>
+                <span class="app-chrome-label">Executive report</span>
               </div>
               <div class="app-frame-viewport app-crop app-crop-funding">
                 <img
@@ -163,24 +170,22 @@
           <article class="showcase-card">
             <div class="app-frame app-frame-card">
               <div class="app-chrome app-chrome-compact" aria-hidden="true">
-                <div class="app-chrome-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                <div class="app-chrome-brand">
+                  <img src="assets/Secondary Logo.png" alt="" />
                 </div>
                 <span class="app-chrome-label">Contingency attribution</span>
               </div>
-              <div class="app-frame-viewport app-crop app-crop-attribution">
+              <div class="app-frame-viewport app-crop app-crop-contingency">
                 <img
-                  src="assets/reports.png"
-                  alt="Contingency attribution showing primary drivers behind the recommended contingency"
+                  src="assets/contingencybreakdown.png"
+                  alt="Why this contingency breakdown showing measured attribution drivers"
                   loading="lazy"
                 />
               </div>
             </div>
             <div class="showcase-card-body">
               <h3>Why this contingency?</h3>
-              <p>Explain which estimate uncertainty and risk concentrations account for contingency.</p>
+              <p>See measured attribution drivers that explain how each risk layer contributes to contingency.</p>
             </div>
           </article>
         </div>
@@ -226,7 +231,15 @@
   </main>
 
   <footer>
-    <p>© 2026 Jakten. Operated by Northland Ventures LLC.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo-mark">
+          <img src="assets/Secondary Logo.png" alt="" />
+        </span>
+        <span class="footer-wordmark">Jakten Risk</span>
+      </div>
+      <p>© 2026 Jakten. Operated by Northland Ventures LLC.</p>
+    </div>
   </footer>
 </body>
 </html>
